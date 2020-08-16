@@ -9,7 +9,7 @@
 From within Ubuntu it is best to compile OpenCV 4.4.0 from source as well as fmtlib.
 
 ## Usage
-1. Setup cmake. `cmake .`
+1. Setup cmake: `cmake .`
 2. Choose the desired system length in line 11 of main.cpp.
 3. Compile the program: `make`
 4. Run the program using the following syntax:
