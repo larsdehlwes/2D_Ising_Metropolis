@@ -57,12 +57,9 @@ int main(int argc, char *argv[]){
       std::chrono::steady_clock::time_point end;
       metropolis<L> metrop(beta,bias);
       begin = std::chrono::steady_clock::now();
-      //uint32_t frame_cycles = (L < 256)? 2*512/L*512/L : 10*L/256;
-      uint32_t frame_cycles = (L < 256)? 2*512/L*512/L : 20*L/256;
-      //uint32_t total_cycles = (L < 32)? 50000*128/L*128/L : 12500*512/L;
-      uint32_t total_cycles = (L < 32)? 50000*128/L*128/L : 1000*512/L;
-      //double magnetization = metrop.run(5000,total_cycles,1,frame_cycles);
-      double magnetization = metrop.run(2000,total_cycles,1,frame_cycles);
+      uint32_t frame_cycles = (L < 256)? 2*512/L*512/L : 10*L/256;
+      uint32_t total_cycles = (L < 32)? 50000*128/L*128/L : 12500*512/L;
+      double magnetization = metrop.run(5000,total_cycles,1,frame_cycles);
       end = std::chrono::steady_clock::now();
       std::cout << "run() took " << std::chrono::duration_cast<std::chrono::seconds> (end - begin).count() << " seconds:" << std::endl;
       double susceptibility = (metrop.mean_magnetization_squared-metrop.mean_magnetization*metrop.mean_magnetization)/T*L*L;
