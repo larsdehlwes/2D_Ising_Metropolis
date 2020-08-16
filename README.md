@@ -16,3 +16,6 @@ From within Ubuntu it is best to compile OpenCV 4.4.0 from source as well as fmt
    * Option 1: `./main basename temperature`
    * Option 2: `./main basename temperature_start temperature_end temperature_step`
    * Option 3: `./main basename temp1 temp2 temp3 temp4 ...`
+
+## Wiki
+An in-depth discussion of the code and results that can be achieved with it can be found [here](https://theoreticalphysics.info/index.php/2D_Ising_Model:_Monte_Carlo_Simulations_using_the_Metropolis_Algorithm).
