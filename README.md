@@ -8,11 +8,10 @@
 	sudo apt-get install cmake tcl-vtk qt5-default libgtk3.0-dev ffmpeg
 From within Ubuntu it is best to compile OpenCV 4.4.0 from source as well as fmtlib.
 
-### Usage
+## Usage
 1. Setup cmake. `cmake .`
 2. Choose the desired system length in line 11 of main.cpp.
-3. Compile the pgroam: `make`
-
+3. Compile the program: `make`
 4. Run the program using the following syntax:
    * Option 1: `./main basename temperature`
    * Option 2: `./main basename temperature_start temperature_end temperature_step`
