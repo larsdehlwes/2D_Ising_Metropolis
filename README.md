@@ -9,14 +9,11 @@
 From within Ubuntu it is best to compile OpenCV 4.4.0 from source as well as fmtlib.
 
 ### Usage
-* Setup cmake.
-	cmake .
+1. Setup cmake. `cmake .`
+2. Choose the desired system length in line 11 of main.cpp.
+3. Compile the pgroam: `make`
 
-* Choose the desired system length in line 11 of main.cpp.
-* Compile the pgroam: 
-	make
-
-* Run the program using the following syntax:
-	Option 1: ./main basename temperature
-	Option 2: ./main basename temperature_start temperature_end temperature_step
-	Option 3: ./main basename temp1 temp2 temp3 temp4 ...
+4. Run the program using the following syntax:
+   * Option 1: `./main basename temperature`
+   * Option 2: `./main basename temperature_start temperature_end temperature_step`
+   * Option 3: `./main basename temp1 temp2 temp3 temp4 ...`
