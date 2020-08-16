@@ -10,12 +10,10 @@ It is best to compile OpenCV 4.4.0 from source as well as fmtlib.
 
 ### Usage
 1. Setup cmake.
-
-	cmake .
+	 cmake .
 2. Choose the desired system length in line 11 of main.cpp.
 3. Compile the pgroam: 
-
-	make
+	 make
 4. Run the program using the following syntax:
 	Option 1: ./main basename temperature
 	Option 2: ./main basename temperature_start temperature_end temperature_step
